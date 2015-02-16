@@ -1,0 +1,35 @@
+Calculator
+By: 	Nelson Matos
+
+Objective
+Create a application that acts as a simple calculator, focusing on stack operations and stack applications. The program will read an infix algebraic expression with numbers and basic operations. The program will convert an infix expression into a postfix expression, and then evaluates the postfix expression, and then print the result.
+
+File submission consists of two major files
+•	Calculator.h
+•	Calcultor.cpp
+•	Main.cpp 
+
+	
+Calculator.h
+•	Includes iostream, cctype, string, stdio.h and calculator.cpp.
+•	This file contains the class “stack” that will hold our array, count and top variables.
+•	In the public section of the class the methods will be held.
+•	The second class “calculator” will be in charge of setting, getting, and performing calculations using the implementation that is in the calculator.cpp file.
+
+
+Calculator.cpp
+•	A stack template defined by the programmer will be used.
+•	The stack template will be initialized with the count set to 0 and the top set to -1.
+•	void Simulation() – Function that will begin the process of accepting a string, in the form of an infix expression, and passing the string to other functions, in Calculator class, to convert the string into a  postfix expression, and evaluating the postfix expression.
+•	string convert_infix_to_postfix(string) – Function that will accept a string, representing an infix expression, and convert the string into a postfix expression.
+•	int evaluate_postfix(string) – Function that will accept a string, representing a postfix expression, and evaluate the contents of the string. After evaluation, the function will return the result as an int. 
+•	bool checkString(string) – Function that will accept a string, representing an user input. The string should contain a mathematical expression in infix form. This function will check the validity of the user input. If the string passes validation, then the program will proceed. If the program does not pass validation, the program will display an error message and will allow the user to enter another input.
+
+Main
+•	Declaration of calculator object.
+•	Start calculator simulation.
+
+Use
+Using our postfix calculator is fairly simple. 
+•	Type in an algebraic expression with valid operators. 
+•	The calculator provides the required result and asks if you would like to run once more. Press y to continue or n to exit the program. 
